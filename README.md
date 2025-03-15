@@ -25,7 +25,7 @@ SymptoSense aims to simplify allergy management by offering an intelligent and u
    ```
 2. **Install Packages**
    ```bash
-    npm run dev
+    npm run dev --turbo
     # or
     yarn dev
     # or
