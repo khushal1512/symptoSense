@@ -1,0 +1,26 @@
+{
+  "name": "symptolangchain",
+  "version": "1.0.0",
+  "description": "symptosense/backend-core",
+  "license": "ISC",
+  "author": "khushal",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "build": "tsc",
+    "dev": "tsx watch src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@langchain/core": "^0.3.55",
+    "@langchain/google-genai": "^0.2.9",
+    "dotenv": "^16.5.0",
+    "langchain": "^0.3.25"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.19",
+    "tsx": "^4.19.4",
+    "typescript": "^5.3.3"
+  }
+}
