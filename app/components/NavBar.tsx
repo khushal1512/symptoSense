@@ -6,11 +6,12 @@ import { useRouter } from 'next/navigation';
 
 interface NavBarProps {
     title?: string;
+    onSignOut?: () => Promise<void>;
 }
 
-export default function NavBar({ title = "SymptoSense" }: NavBarProps) {
+export default function NavBar({ title = "SymptoSense", onSignOut }: NavBarProps) {
     const router = useRouter();
-  const supabase = createClientComponentClient();
+    const supabase = createClientComponentClient();
 
   const handleSignOut = async () => {
     try {
