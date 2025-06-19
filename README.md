@@ -1,36 +1,60 @@
 # SymptoSense
 
-## Welcome to SymptoSense! 
+## Welcome to SymptoSense!
 
-SymptoSense helps users predict potential allergies by using advanced artificial intelligence. Input your bio information and other relevant details, and SymptoSense will provide predictions for allergies you might have, as well as recommendations for dos and don'ts, possible medications, and even a chat AI option to consult with an LLM.
+**SymptoSense** helps users predict potential allergies using advanced artificial intelligence. Input your bio information and other relevant details, and SymptoSense will provide predictions for allergies you might have, as well as:
 
-## Core Features include 
- - AI-Powered Allergy Predictions
- - Personalized Dos and Don'ts Recommendations
- - Possible Medication Suggestions
- - Interactive Chat AI for Allergy Queries
+- Personalized dos and don'ts  
+- Possible medications  
+- An AI-powered chat interface for real-time allergy consultation  
 
-SymptoSense aims to simplify allergy management by offering an intelligent and user-friendly platform. Utilizing cutting-edge AI technology, SymptoSense analyzes user data to provide accurate allergy predictions, helping users take proactive steps in managing their allergies. Connect with the AI chatbot to get instant answers and personalized advice.
+SymptoSense simplifies allergy management with an intelligent, user-friendly platform that uses cutting-edge AI to help users take proactive steps.
+
+---
+
+## Core Features
+
+- ✅ AI-Powered Allergy Predictions  
+- ✅ Personalized Dos and Don'ts Recommendations  
+- ✅ Possible Medication Suggestions  
+- ✅ Interactive Chat AI for Allergy Queries  
+
+---
 
 ## SymptoSense Components
 
-- [SymptoSense]() 
+- [SymptoSense]()
+
+---
 
 ## Installation Steps
 
-1. **Clone this repository**
+1. **Clone this repository**  
    ```bash
    git clone https://github.com/YourRepo/symptoSense.git
-
-   ```
-2. **Install Packages**
+   cd symptoSense
+   
+2. **Set up Supabase**
+   - Go to https://supabase.com and create a new project.
+   - In the Supabase dashboard, open the SQL Editor, and run the SQL script in:
    ```bash
-    npm run dev --turbo
-    # or
-    yarn dev
-    # or
-    pnpm dev
-    # or
-    bun dev
-    ```
-3. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+   /supabase/schema.sql
+   ```
+   to initialize your database.
+3. Create a .env.local file in the root directory and fill these
+   ```bash
+   touch .env.local
+   ```
+   ```bash
+   NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+   NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+   NEXT_PUBLIC_GEMINI_API_KEY=your_gemini_api_key
+   ```
+4. Then Run the Development server
+   ```bash
+   npm install
+   ```
+   ```bash
+   npm run dev
+   ```
+
